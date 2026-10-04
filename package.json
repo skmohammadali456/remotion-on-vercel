@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "node scripts/copy-compiler.mjs && next dev",
+    "build": "node scripts/copy-compiler.mjs && next build",
     "start": "next start",
     "lint": "eslint .",
     "remotion": "remotion studio",
